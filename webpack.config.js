@@ -1,10 +1,11 @@
 var webpack = require('webpack');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
-    entry: {
-        index :__dirname+"/app/index.js",
-        testReact:__dirname+"/app/testReact.jsx",
-    },
+    // entry: {
+    //     index :__dirname+"/app/index.js",
+    //     testReact:__dirname+"/app/testReact.jsx",
+    // },
+    entry: [__dirname+"/app/index.js",__dirname+"/app/testReact.jsx"],
     output: {
         publicPath:'/xxx/',
         path: __dirname + "/build",//打包后的文件存放的地方
